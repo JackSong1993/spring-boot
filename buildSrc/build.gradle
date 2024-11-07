@@ -6,6 +6,13 @@ plugins {
 }
 
 repositories {
+	mavenLocal()
+	maven { url 'https://maven.aliyun.com/repository/public/' }
+	maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+	maven { url 'https://maven.aliyun.com/repository/google/' }
+	maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+	maven { url 'https://jitpack.io/' }
+	
 	mavenCentral()
 	gradlePluginPortal()
 }
@@ -54,7 +61,7 @@ dependencies {
 	testImplementation("org.mockito:mockito-core:${mockitoVersion}")
 	testImplementation("org.springframework:spring-test")
 
-	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.9.3")
 }
 
 configurations.all {

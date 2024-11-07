@@ -15,7 +15,7 @@ dependencies {
 	compileOnly("junit:junit")
 	compileOnly("org.junit.jupiter:junit-jupiter")
 	compileOnly("org.junit.platform:junit-platform-engine")
-	compileOnly("org.junit.platform:junit-platform-launcher")
+	compileOnly("org.junit.platform:junit-platform-launcher:1.9.3")
 	compileOnly("org.mockito:mockito-core")
 	compileOnly("org.springframework:spring-context")
 	compileOnly("org.springframework.data:spring-data-redis")
